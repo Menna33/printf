@@ -9,6 +9,11 @@ int printf_int(va_list args)
 
 int num, digit, base = 1, count = 0;
 num = va_arg(args, int);
+if(num == 0)
+{
+_putchar('0');
+return(1);  
+}
 if (num < 0)
 {
 num = -1 * num;
@@ -42,6 +47,11 @@ int printf_dec(va_list args)
 
 int num, digit, base = 1, count = 0;
 num = va_arg(args, int);
+if(num == 0)
+{
+_putchar('0');
+return(1);  
+}
 if (num < 0)
 {
 num = -1 * num;
