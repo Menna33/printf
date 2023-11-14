@@ -15,6 +15,7 @@ int _printf(const char *format, ...)
 		{"i", printf_int},
 		{"d", printf_dec},
 		{"b", binary},
+		{"r", reverse_str},
 		{NULL, NULL}
 	};
 	int i, j;
@@ -37,7 +38,7 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			j = 0;
-			while (j < 6)
+			while (j < 7)
 			{
 				if (format[i] == conv[j].sp[0])
 				{
@@ -46,7 +47,7 @@ int _printf(const char *format, ...)
 				}
 				j++;
 			}
-			if (j == 6)
+			if (j == 7)
 			{
 				write(1, "%", 1);
 				write(1, &format[i], 1);

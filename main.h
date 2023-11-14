@@ -24,4 +24,5 @@ int _putchar(char c);
 int printf_int(va_list args);
 int printf_dec(va_list args);
 int binary(va_list args);
+int reverse_str(va_list args);
 #endif
