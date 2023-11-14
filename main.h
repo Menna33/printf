@@ -6,6 +6,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 /**
  * struct specifier - handle conversion specifiers
  * @sp:..
