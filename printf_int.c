@@ -7,7 +7,7 @@
 int printf_int(va_list args)
 {
 
-int num, digit, base = 1, count = 0;
+long num, digit, base = 1, count = 0;
 num = va_arg(args, int);
 if (num == 0)
 {
@@ -45,7 +45,8 @@ return (count);
 int printf_dec(va_list args)
 {
 
-int num, digit, base = 1, count = 0;
+long num;
+long digit, base = 1, count = 0;
 num = va_arg(args, int);
 if (num == 0)
 {
