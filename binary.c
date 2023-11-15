@@ -19,6 +19,10 @@ int binary(va_list args)
 	{
 		num = -(num);
 	}
+	if (num == 0)
+	{
+		_putchar('0');
+	}
 	while (num != 0)
 	{
 		nlen++;
